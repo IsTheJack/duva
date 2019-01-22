@@ -50,7 +50,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm lint && npm run test"
+      "pre-push": "yarn run lint && yarn run test"
     }
   },
   "lint-staged": {
