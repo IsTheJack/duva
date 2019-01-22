@@ -2,6 +2,16 @@
 
 > Dockerized universal Vue App boilerplate
 
+## Running using docker
+This boilerplate run using docker (production mode)
+
+Prerequisite: Docker
+
+```bash
+# download (if necessary) and run the docker image using docker-compose
+docker-compose up
+```
+
 ## Build Setup
 
 ``` bash
@@ -18,5 +28,27 @@ $ yarn start
 # generate static project
 $ yarn run generate
 ```
+
+## Running the tests
+```bash
+# run unit/integration tests
+yarn test
+
+# run e2e (headless mode) tests
+yarn run e2e
+```
+# Built on Nuxt Js
+
+- [x] Vue
+- [x] vuetifyjs
+- [x] Sass
+- [x] Jest
+- [x] PWA
+- [x] Universal APP (Server side rendering)
+- [x] Prettier / Lint / Husky
+- [ ] Cypress preconfig
+- [x] Docker preconfig (Production mode)
+- [ ] JavaScript Error Tracking - [Sentry](https://sentry.io/for/javascript/)
+- [x] Follow the [angular commit conversion](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
