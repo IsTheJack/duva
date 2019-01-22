@@ -1,6 +1,8 @@
-# duva
+# DUVA
 
-> Dockerized universal Vue App boilerplate
+> Dockerized universal Vue App is a Nuxt boilerplate with other awesome stuff
+
+![Duva](./assets/duva-logo.png)
 
 ## Running using docker
 This boilerplate run using docker (production mode)
@@ -14,7 +16,7 @@ docker-compose up
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ yarn install
 
