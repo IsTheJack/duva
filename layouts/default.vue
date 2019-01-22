@@ -98,19 +98,19 @@ export default {
         {
           icon: 'apps',
           title: 'Welcome',
-          to: '/'
+          to: '/',
         },
         {
           icon: 'bubble_chart',
           title: 'Inspire',
-          to: '/inspire'
-        }
+          to: '/inspire',
+        },
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Vuetify.js',
     }
-  }
+  },
 }
 </script>
