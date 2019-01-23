@@ -13,7 +13,7 @@
     "test": "jest",
     "e2e": "cypress run",
     "e2e:open": "cypress open",
-    "e2e:ci": "cross-env CI=true start-server-and-test dev http://localhost:3030 e2e"
+    "e2e:ci": "cross-env CI=true start-server-and-test dev http://localhost:3000 e2e"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
