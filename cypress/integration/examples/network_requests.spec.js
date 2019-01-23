@@ -16,19 +16,19 @@ context('Network Requests', () => {
       expect(server.delay).to.eq(0)
       expect(server.method).to.eq('GET')
       expect(server.status).to.eq(200)
-      expect(server.headers).to.be.null()
-      expect(server.response).to.be.null()
-      expect(server.onRequest).to.be.undefined()
-      expect(server.onResponse).to.be.undefined()
-      expect(server.onAbort).to.be.undefined()
+      expect(server.headers).to.be.null
+      expect(server.response).to.be.null
+      expect(server.onRequest).to.be.undefined
+      expect(server.onResponse).to.be.undefined
+      expect(server.onAbort).to.be.undefined
 
       // These options control the server behavior
       // affecting all requests
 
       // pass false to disable existing route stubs
-      expect(server.enable).to.be.true()
+      expect(server.enable).to.be.true
       // forces requests that don't match your routes to 404
-      expect(server.force404).to.be.false()
+      expect(server.force404).to.be.false
       // whitelists requests from ever being logged or stubbed
       expect(server.whitelist).to.be.a('function')
     })

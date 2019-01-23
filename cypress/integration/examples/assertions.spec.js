@@ -26,7 +26,7 @@ context('Assertions', () => {
     // https://on.cypress.io/assertions
     it('expect - make an assertion about a specified subject', () => {
       // We can use Chai's BDD style assertions
-      expect(true).to.be.true()
+      expect(true).to.be.true
 
       // Pass a function to should that can have any number
       // of explicit assertions within it.

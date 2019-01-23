@@ -70,7 +70,7 @@ context('Files', () => {
       cy.writeFile('cypress/fixtures/users.json', response.body)
     })
     cy.fixture('users').should(users => {
-      expect(users[0].name).to.exist()
+      expect(users[0].name).to.exist
     })
 
     // JavaScript arrays and objects are stringified

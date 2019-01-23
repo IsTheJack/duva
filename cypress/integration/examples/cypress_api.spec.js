@@ -102,7 +102,7 @@ context('Cypress.arch', () => {
 
   it('Get CPU architecture name of underlying OS', () => {
     // https://on.cypress.io/arch
-    expect(Cypress.arch).to.exist()
+    expect(Cypress.arch).to.exist
   })
 })
 
@@ -147,8 +147,8 @@ context('Cypress.dom', () => {
     const visibleP = Cypress.$('.dom-p p.visible').get(0)
 
     // our first paragraph has css class 'hidden'
-    expect(Cypress.dom.isHidden(hiddenP)).to.be.true()
-    expect(Cypress.dom.isHidden(visibleP)).to.be.false()
+    expect(Cypress.dom.isHidden(hiddenP)).to.be.true
+    expect(Cypress.dom.isHidden(visibleP)).to.be.false
   })
 })
 
@@ -201,7 +201,7 @@ context('Cypress.platform', () => {
 
   it('Get underlying OS name', () => {
     // https://on.cypress.io/platform
-    expect(Cypress.platform).to.be.exist()
+    expect(Cypress.platform).to.be.exist
   })
 })
 
@@ -212,6 +212,6 @@ context('Cypress.version', () => {
 
   it('Get current version of Cypress being run', () => {
     // https://on.cypress.io/version
-    expect(Cypress.version).to.be.exist()
+    expect(Cypress.version).to.be.exist
   })
 })

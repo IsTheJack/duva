@@ -13,7 +13,7 @@ context('Spies, Stubs, and Clock', () => {
 
     obj.foo()
 
-    expect(spy).to.be.called()
+    expect(spy).to.be.called
   })
 
   it('cy.stub() - create a stub and/or replace a function with stub', () => {
@@ -36,7 +36,7 @@ context('Spies, Stubs, and Clock', () => {
 
     obj.foo('foo', 'bar')
 
-    expect(stub).to.be.called()
+    expect(stub).to.be.called
   })
 
   it('cy.clock() - control time in the browser', () => {

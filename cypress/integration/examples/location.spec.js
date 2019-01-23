@@ -13,7 +13,7 @@ context('Location', () => {
   it('cy.location() - get window.location', () => {
     // https://on.cypress.io/location
     cy.location().should(location => {
-      expect(location.hash).to.be.empty()
+      expect(location.hash).to.be.empty
       expect(location.href).to.eq(
         'https://example.cypress.io/commands/location'
       )
@@ -23,7 +23,7 @@ context('Location', () => {
       expect(location.pathname).to.eq('/commands/location')
       expect(location.port).to.eq('')
       expect(location.protocol).to.eq('https:')
-      expect(location.search).to.be.empty()
+      expect(location.search).to.be.empty
     })
   })
 
