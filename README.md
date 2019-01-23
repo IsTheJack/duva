@@ -1,12 +1,14 @@
 # DUVA
 
-> Dockerized universal Vue App is a Nuxt boilerplate with other awesome stuff
+Dockerized universal Vue App is a Nuxt boilerplate with other awesome stuff
 
-![Duva](./assets/duva-logo.png)
+<p align="center">
+  <img src="./assets/duva-logo.png" title="DUVA">
+</p>
 
 ## Running using docker
 
-This boilerplate run using docker (development mode)
+This boilerplate run using docker (development mo`de)
 
 Prerequisite: Docker
 
