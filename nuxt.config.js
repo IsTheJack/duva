@@ -37,7 +37,17 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['@/plugins/vuetify'],
+  plugins: [
+    // Before uncomment the sentry plugin, setup the keys into '~/plugins/sentry.js'
+    // '@/plugins/sentry',
+
+    // Before uncomment the google analytics plugin, setup the keys into '~/plugins/ga.js'
+    // Look for ga('create', 'UA-XXXXXXXX-X', 'auto') line into '~/plugins/ga.js' file
+    // { src: '~plugins/ga.js', ssr: false },
+
+    // vuetify plugin
+    '@/plugins/vuetify',
+  ],
 
   /*
   ** Nuxt.js modules

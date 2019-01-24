@@ -20,7 +20,7 @@ docker-compose up
 ## Build Setup
 
 ```bash
-# install dependencies
+# install dependencies (use only npm instead of yarn)
 $ npm run install
 
 # serve with hot reload at localhost:3000
@@ -38,10 +38,10 @@ $ npm run generate
 
 ```bash
 # run unit/integration tests
-yarn test
+npm run test
 
 # run e2e (headless mode) tests
-yarn run e2e
+npm run e2e
 ```
 
 ## Configuring CI/CD
@@ -71,9 +71,10 @@ It will be ran on PR creation
 - [x] Prettier / Lint / Husky
 - [x] Cypress preconfig
 - [x] Docker preconfig (Production mode)
-- [ ] JavaScript Error Tracking - [Sentry](https://sentry.io/for/javascript/)
+- [x] JavaScript Error Tracking - [Sentry](https://sentry.io/for/javascript/)
 - [x] Follow the [angular commit conversion](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
 - [x] CircleCI preconfig
+- [x] Google Analytics preconfig
 - [x] Heroku (Docker)
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
