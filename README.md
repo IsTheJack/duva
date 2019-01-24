@@ -54,8 +54,14 @@ npm run e2e
 
 ### CD (Heroku)
 
-1. Create an app into Heroku
+1. [Create an app into Heroku](https://devcenter.heroku.com/articles/creating-apps)
 2. [Set the stack to container (docker)](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml#getting-started)
+
+```bash
+# Now the deploy will use docker container
+# You can configure it into ~/heroku.yml
+$ heroku stack:set container
+```
 
 It will be deployed on branch master update
 
@@ -65,6 +71,43 @@ It will be deployed on branch master update
 2. [Set the HEROKU_APP_NAME and HEROKU_API_KEY environment variables](https://circleci.com/docs/2.0/deployment-integrations/#heroku)
 
 It will be ran on PR creation
+
+### Google Analytics
+
+1. Go to `~/plugins/ga.js` and set your GA key.
+2. Go to the puglins section at `~/nuxt.config.js` and uncomment the GA value:
+
+```javascript
+  /*
+  ** Plugins to load before mounting the App
+  */
+  plugins: [
+    //...
+
+    // Before uncomment the google analytics plugin, setup the keys into '~/plugins/ga.js'
+    // Look for ga('create', 'UA-XXXXXXXX-X', 'auto') line into '~/plugins/ga.js' file
+    { src: '~plugins/ga.js', ssr: false }, // uncomment this line
+
+    // ...
+  ],
+```
+
+### Sentry Javascript Error Tracking (on production)
+
+1. Go to `~/plugins/sentry.js` and set your keys.
+2. Go to the puglins section at `~/nuxt.config.js` and uncomment the Sentry value:
+
+```javascript
+  /*
+  ** Plugins to load before mounting the App
+  */
+  plugins: [
+    // Before uncomment the sentry plugin, setup the keys into '~/plugins/sentry.js'
+    '@/plugins/sentry', // uncomment this line
+
+    // ...
+  ],
+```
 
 ## Built on Nuxt Js
 
