@@ -46,6 +46,12 @@ npm run e2e
 
 ## Configuring CI/CD
 
+### QA Flow
+
+<p align="center">
+  <img src="./assets/duva-flow.png" title="DUVA flow">
+</p>
+
 ### CD (Heroku)
 
 1. Create an app into Heroku
