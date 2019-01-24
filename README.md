@@ -6,9 +6,9 @@ Dockerized universal Vue App is a Nuxt boilerplate with other awesome stuff
   <img src="./assets/duva-logo.png" title="DUVA">
 </p>
 
-## Running using docker
+## Running the app using docker
 
-This boilerplate run using docker (development mo`de)
+Just download the docker if you don't have it and run the command below:
 
 Prerequisite: Docker
 
