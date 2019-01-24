@@ -9,4 +9,5 @@ module.exports = {
     '^.+\\.js$': 'babel-jest',
     '.*\\.(vue)$': 'vue-jest',
   },
+  modulePathIgnorePatterns: ['<rootDir>/cypress/'],
 }

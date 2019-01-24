@@ -1,16 +1,19 @@
 # DUVA
 
-> Dockerized universal Vue App is a Nuxt boilerplate with other awesome stuff
+Dockerized universal Vue App is a Nuxt boilerplate with other awesome stuff
 
-![Duva](./assets/duva-logo.png)
+<p align="center">
+  <img src="./assets/duva-logo.png" title="DUVA">
+</p>
 
 ## Running using docker
-This boilerplate run using docker (production mode)
+
+This boilerplate run using docker (development mo`de)
 
 Prerequisite: Docker
 
 ```bash
-# download (if necessary) and run the docker image using docker-compose
+# Set the node, cypress dependencies, install project dependencies and start dev server
 docker-compose up
 ```
 
@@ -18,20 +21,21 @@ docker-compose up
 
 ```bash
 # install dependencies
-$ yarn install
+$ npm run install
 
 # serve with hot reload at localhost:3000
-$ yarn run dev
+$ npm run dev
 
 # build for production and launch server
-$ yarn run build
-$ yarn start
+$ npm run build
+$ npm start
 
 # generate static project
-$ yarn run generate
+$ npm run generate
 ```
 
 ## Running the tests
+
 ```bash
 # run unit/integration tests
 yarn test
@@ -39,7 +43,24 @@ yarn test
 # run e2e (headless mode) tests
 yarn run e2e
 ```
-# Built on Nuxt Js
+
+## Configuring CI/CD
+
+### CD (Heroku)
+
+1. Create an app into Heroku
+2. [Set the stack to container (docker)](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml#getting-started)
+
+It will be deployed on branch master update
+
+### CI (CircleCI)
+
+1. Setup the CircleCI on your repository
+2. [Set the HEROKU_APP_NAME and HEROKU_API_KEY environment variables](https://circleci.com/docs/2.0/deployment-integrations/#heroku)
+
+It will be ran on PR creation
+
+## Built on Nuxt Js
 
 - [x] Vue
 - [x] vuetifyjs
@@ -48,9 +69,11 @@ yarn run e2e
 - [x] PWA
 - [x] Universal APP (Server side rendering)
 - [x] Prettier / Lint / Husky
-- [ ] Cypress preconfig
+- [x] Cypress preconfig
 - [x] Docker preconfig (Production mode)
 - [ ] JavaScript Error Tracking - [Sentry](https://sentry.io/for/javascript/)
 - [x] Follow the [angular commit conversion](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
+- [x] CircleCI preconfig
+- [x] Heroku (Docker)
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
